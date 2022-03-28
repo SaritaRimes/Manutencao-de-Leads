@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Novo Lead</title>
+</head>
+<body>
+    <img src="../imagens/EloGroup_logo.jpg" alt="logo EloGroup" class="logoEloGroup">
+
+    <div class="fraseNovoLead">
+        Novo Lead
+    </div>
+
+    <div class="dadosNovoLead">
+        <label for="name">Nome*</label>
+        <input type="text" class="boxUsuario" id="name" required>
+
+        <label for="phone">Telefone*</label>
+        <input type="number" class="boxPassword" id="phone" required>
+
+        <label for="mail">Email*</label>
+        <input type="text" class="boxConfirmacaoPassword" id="mail" required>
+    </div>
+
+    <p class="oportunidades">Oportunidades*</p>
+    
+    <div class="oportunidadesTable">
+        <table>
+            <tr>
+                <td><input type="checkbox" onclick="selecionaTodosCheckBoxes(this)"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="check" id="RPA"></td>
+                <td>RPA</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="check" id="Produto Digital"></td>
+                <td>Produto Digital</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="check" id="Analytics"></td>
+                <td>Analytics</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="check" id="BPM"></td>
+                <td>BPM</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <a><button class="botaoSalvar" onclick="armazenaLead()">Salvar</button></a>
+    <script src="script.js"></script>
+</body>
+</html>

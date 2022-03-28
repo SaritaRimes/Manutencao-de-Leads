@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Painel de Leads</title>
+</head>
+<body>
+    <img src="../imagens/EloGroup_logo.jpg" alt="logo EloGroup" class="logoEloGroup">
+
+    <div class="frasePainelLeads">
+        Painel de Leads
+    </div>
+
+    <a href="../novo-lead/index.html"><button class="botaoNovoLead">Novo Lead (+)</button></a>    
+
+    <table id="table1">
+        <tr>
+            <th>Cliente em potencial</th>
+            <th>Dados Confirmados</th>
+            <th>Reunião Agendada</th>
+        </tr>
+        <tr> <!-- linha 1 -->
+            <td> <!-- coluna 1 -->
+                <div draggable="true" id="linha1coluna1" class="box" ondragstart="onDragStart(event);">
+                    Org. Internacionais
+                </div>                
+            </td>
+            <td ondragover="onDragOver(event);" ondrop="onDrop(event);"> <!-- coluna 2 -->
+                <div draggable="true" id="linha1coluna2" class="box" ondragstart="onDragStart(event);">
+                    
+                </div>
+            </td>
+            <td ondragover="onDragOver(event);" ondrop="onDrop(event);"> <!-- coluna 3 -->
+                <div draggable="false" id="linha1coluna3">
+                    
+                </div>
+            </td>
+        </tr>
+        <tr> <!-- linha 2 -->
+            <td> <!-- coluna 1 -->
+                <div draggable="true" id="linha2coluna1" class="box" ondragstart="onDragStart(event);">
+                    
+                </div>
+            </td>
+            <td ondragover="onDragOver(event);" ondrop="onDrop(event);"> <!-- coluna 2 -->
+                <div draggable="true" id="linha2coluna2" class="box" ondragstart="onDragStart(event);">
+                    Ind. Farm. LTDA
+                </div>
+            </td>
+            <td ondragover="onDragOver(event);" ondrop="onDrop(event);"> <!-- coluna 3 -->
+                <div draggable="false" id="linha2coluna3">
+                    
+                </div>
+            </td>
+        </tr>
+        <tr> <!-- linha 3 -->
+            <td> <!-- coluna 1 -->
+                <div draggable="true" id="linha3coluna1" class="box" ondragstart="onDragStart(event);">
+                    Musc. Sound Live Cmp
+                </div>
+            </td>
+            <td ondragover="onDragOver(event);" ondrop="onDrop(event);"> <!-- coluna 2 -->
+                <div draggable="true" id="linha3coluna2" class="box" ondragstart="onDragStart(event);">
+                    
+                </div>
+            </td>
+            <td ondragover="onDragOver(event);" ondrop="onDrop(event);"> <!-- coluna 3 -->
+                <div draggable="false" id="linha3coluna3">
+                    
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

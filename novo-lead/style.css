@@ -1,0 +1,97 @@
+header {
+    height: 70px;
+}
+
+body {
+    max-width: 800px;
+    height: 430px;
+    padding: 10px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.logoEloGroup {
+    width: 350px;
+}
+
+.fraseNovoLead {
+    position: fixed;
+    right: 35%;
+    top: 20%;
+}
+
+.dadosNovoLead {
+    width: 40%;
+    position: relative;
+    top: 10%;
+}
+
+.boxUsuario {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid black;
+    margin-bottom: 25px;
+}
+
+.boxPassword {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid black;
+    margin-bottom: 25px;
+}
+
+.boxConfirmacaoPassword {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.oportunidades {
+    position: fixed;
+    top: 32%;
+    right: 35%;
+}
+
+.oportunidadesTable table {
+    width: 25%;
+    position: fixed;
+    top: 38.5%;
+    right: 20%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.oportunidadesTable tr, td {
+    position: relative;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.oportunidadesTable tr {
+    height: 19px;
+}
+
+.oportunidadesTable tr:first-child {
+    background-color: rgba(128, 128, 128, 0.74);
+    color: white;
+}
+
+.oportunidadesTable tr:nth-child(even) {
+    background-color: rgba(128, 120, 120, 0.233);
+}
+
+.botaoSalvar {
+    background-color: rgb(8, 152, 235);
+    color: white;
+    width: 41%;
+    height: 40px;
+    position: relative;
+    top: 1%;
+    left: 58%;
+    font-size: 95%;
+}
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Registro</title>
+    </head>
+    <form method="get" action="/registro">
+        <body>
+            <img src="../imagens/EloGroup_logo.jpg" alt="Logo EloGroup" class="logoEloGroup">
+            
+            <p></p>
+            <label for="username">Usuário*</label>
+            <input type="text" class="boxUsuario" id="username" required>
+
+            <label for="password">Password*</label>
+            <input type="password" class="boxPassword" id="password" minlength="8" required pattern="(?=.*\d)(?=.* 
+            [a-z])(?=.*?[0-9])(?=.*?[~`!@#$%\^&*()\-_=+[\]{};:\x27.,\x22\\|/?><]).{8,}">
+
+            <label for="confirmPassword">Confirmação Password*</label>
+            <input type="password" class="boxConfirmacaoPassword" id="confirmPassword" minlength="8" required>
+            
+            <a><input type="submit" class="botaoRegistrar" onclick="armazenaRegistro()" value="Registrar"></a>
+            
+            <script src="script.js"></script>
+        </body>
+    </form>
+</html>
